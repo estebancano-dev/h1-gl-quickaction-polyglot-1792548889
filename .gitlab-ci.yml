@@ -1,0 +1,9 @@
+stages:
+  - test
+
+owned_safe_canary:
+  stage: test
+  script:
+    - printf 'owned-safe-canary-no-secrets\n'
+  when: manual
+  allow_failure: true
